@@ -1,0 +1,157 @@
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 40px;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+
+}
+
+
+/* header */
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #d77676;
+  margin-top:12%;
+
+}
+
+
+/* form css */
+/*
+form {
+  margin: 40px;
+  background-color: rgba(255, 255, 255, 0.466);
+  height:80%;
+  width:60%;
+  display:flex;
+  display: block;
+
+  
+}
+*/
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.432);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+
+  width:60%;
+  max-width: 550px;
+  margin: 0 auto 40px;
+}
+
+form input[type="color"],
+form select {
+  margin: 0 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d77676;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+  background-color: aqua;
+}
+
+
+/* label */
+
+.label {
+  font-size: 16px;
+  font-weight: 600;  /* semi-bold */
+  color: #333;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+  
+
+
+
+/* mood card */
+.moodList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.moodCard {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+
+.moodCard form {
+  top: 5px;
+  right: 10px;
+  margin-top: 15px;
+}
+
+
+.moodCard button {
+  padding: 4px 8px;
+  font-size: 12px; 
+  border-radius: 4px;
+  background: rgba(245, 248, 252, 0.2);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.moodCard button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* === login page style === */
+/*
+.login-page {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+} 
+  */

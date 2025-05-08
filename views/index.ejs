@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Color Picker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h1>Mood Color Picker</h1>
+
+  <!-- mood input form -->
+  <form action="/addMood" method="POST">
+    <label>
+      Choose a Color:
+      <input type="color" name="color" required>
+    </label>
+
+    <label>
+      Mood:
+
+      <select name="mood" required>
+        <option value="Happy">Happy</option>
+        <option value="Calm">Calm</option>
+        <option value="Sad">Sad</option>
+        <option value="Angry">Angry</option>
+      </select>
+
+    </label>
+
+    <!-- button -->
+    <button type="submit">Save Mood</button>
+
+  </form>
+
+  <!-- mood display cards -->
+  <div class="moodList">
+    <% moods.forEach(function(m) { %>
+      <div class="moodCard" style="background-color: <%= m.color %>;">
+        <p><%= m.mood %></p>
+        <form action="/deleteMood" method="POST">
+          <input type="hidden" name="id" value="<%= m._id %>">
+          <button type="submit"><i class="fas fa-trash"></i></button>
+        </form>
+      </div>
+    <% }); %>
+    
+  </div>
+  
+    <!-- mainjs -->
+  <script src="/main.js"></script>
+</body>
+</html>
