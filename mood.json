@@ -1,0 +1,26 @@
+[
+  {
+    "mood": "Happy",
+    "color": "#FFD700",
+    "userId": { "$oid": "68114174ff3abc3145e0ba5f" },
+    "createdAt": { "$date": "2025-04-29T15:00:00.000Z" }
+  },
+  {
+    "mood": "Calm",
+    "color": "#A3D5D3",
+    "userId": { "$oid": "68114174ff3abc3145e0ba5f" },
+    "createdAt": { "$date": "2025-04-29T15:10:00.000Z" }
+  },
+  {
+    "mood": "Sad",
+    "color": "#89CFF0",
+    "userId": { "$oid": "68114174ff3abc3145e0ba5f" },
+    "createdAt": { "$date": "2025-04-29T15:20:00.000Z" }
+  },
+  {
+    "mood": "Angry",
+    "color": "#FF6B6B",
+    "userId": { "$oid": "68114174ff3abc3145e0ba5f" },
+    "createdAt": { "$date": "2025-04-29T15:30:00.000Z" }
+  }
+]
